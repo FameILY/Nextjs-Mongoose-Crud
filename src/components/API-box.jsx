@@ -26,7 +26,7 @@ export default function API({ title, url, desc, method, paramNeeded }) {
 
   async function handleClick() {
     try {
-        const fullUrl = "http://"+url+path
+        const fullUrl = url+path
         console.log(fullUrl)
       const result = await fetch(fullUrl, {
         method: method,
