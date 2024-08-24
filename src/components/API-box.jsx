@@ -6,7 +6,7 @@ export default function API({ title, url, desc, method, paramNeeded }) {
   const [data, setData] = new useState("Hit the Request to see it in action");
   const [body, setBody] = new useState({
     title: "",
-    desc: ""
+    description: ""
   });
   const [path, setPath] = new useState('')
 
@@ -80,8 +80,8 @@ export default function API({ title, url, desc, method, paramNeeded }) {
               </label>
               <input
                 type="text"
-                id="desc"
-                name="desc"
+                id="description"
+                name="description"
                 className="w-full bg-slate-800 p-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="Just wanted to say Hello World, its been a long time "
                 onChange={handleChange}
