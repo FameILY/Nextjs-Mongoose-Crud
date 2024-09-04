@@ -47,7 +47,7 @@ export default function API({ title, url, desc, method, paramNeeded }) {
         <div></div>
         <p className="font-bold text-2xl">{title}</p>
 
-        <p className="font-mono text-1xl text-red-500">{url}{path}</p>
+        <p className="font-mono text-1xl text-red-500">{method}{" "}{url}{path}</p>
 
         <p className="font-light text-1xl">{desc}</p>
 
